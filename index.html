@@ -1,8 +1,117 @@
----
-layout: default
-title: Hank Quinlan, Horrible Cop
----
-<div class="blurb">
-	<h1>Hi there, I'm Hank Quinlan!</h1>
-	<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-</div><!-- /.blurb -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<style type="text/css" media="all">
+body {font-family: 'Droid Sans', helvetica,Arial,sans-serif;}
+a:link, a:visited, a:active {text-decoration:none}
+div.container{width:80%; margin:2%; line-height:140%;}
+div.right{float:right;width:200px; margin:1em; padding:1em;}
+div.content{margin-left:4%; padding:1em;}
+</style>
+
+<title>Hyunjik Kim</title>
+<meta name="description" content="Academic page of Hyunjik Kim. Research on machine learning, scalable inference, and automated modeling.">
+<meta name="keywords" content="Automatic machine learning, Gaussian processes, Bayesian machine learning">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+<script type="text/javascript" async="" src="www.google-analytics.com/ga.js"></script>
+<script type="text/javascript">
+    function trackOutboundLink(link, category, action) { 
+        try { 
+        _gaq.push(['_trackEvent', category , action]); 
+        } catch(err){}
+    }
+</script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8635368-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<style type="text/css">
+  div.foo p {
+margin-bottom:0.0em; 
+margin-top:0.0em;
+}
+</style>
+
+</head>
+
+<body>
+<br>
+<div class="container">
+<!--<div class="right"><img alt="" width="200px" src="./pictures/profile5.png"></div>-->
+<!--<div class="right"><img alt="" width="250px" src="./pictures/me/david-duvenaud-headshot.jpg"></div>-->
+<div class="content">
+<h1 style="text-align: left;">Hyunjik Kim</h1>
+
+<b><font size="4">
+<a href="#preprints"      onClick="_gaq.push(['_trackEvent', 'withinpage', 'preprints', 'textlink']);">Preprints</a>
+<!--| <a href="#courses"      onclick="_gaq.push(['_trackEvent', 'withinpage', 'courses', 'textlink']);">Courses</a>-->
+| <a href="#publications" onclick="_gaq.push(['_trackEvent', 'withinpage', 'publications', 'textlink']);">Publications</a>
+</font></b>
+
+<!-- <img alt="" src="./pictures/text.png"> -->
+<br><br>
+
+<p>I'm a PhD student at the <a href="http://www.ox.ac.uk/">University of Oxford</a>, in the <a href="https://www.stats.ox.ac.uk/">Department of Statistics</a>.</p>
+
+<p><a href="resume.pdf" onclick="_gaq.push(['_trackEvent', 'downloads', 'resume', 'pdf']);">Curriculum Vitae</a></p>
+<p> 
+E-mail: <a href="mailto:hkim@stats.ox.ac.uk">hkim@stats.ox.ac.uk</a>
+</p>
+
+<br>
+<br>
+
+<div class="foo">
+
+<H2><a id=preprints>Preprints</a></H2>
+<table border="0" cellspacing="4" cellpadding="2">
+
+
+
+<tr>
+<td valign="top">
+  <a href="https://arxiv.org/pdf/1605.07025v2.pdf" onclick="_gaq.push(['_trackEvent', 'downloads', 'autochem', 'pdf' ]); ">
+  </a>
+</td>
+<td valign="top">
+  <b>Tucker Gaussian Process for Regression and Collaborative Filtering</b>
+<p>
+We introduce the Tucker Gaussian Process (TGP), a model for regression that regularises a Gaussian Process (GP) towards simpler regression functions for enhanced generalisation performance. 
+We derive it using a novel approach to scalable GP learning, and show that our model is particularly well-suited to grid-structured data and problems where the dependence on covariates is close to being separable. 
+A prime example is collaborative filtering, for which our model provides an effective GP based method that has a low-rank matrix factorisation at its core. We show that TGP generalises classical Bayesian matrix factorisation models, and goes beyond them to give a natural and elegant method for incorporating side information.
+
+</p>
+  <a href="http://aspuru.chem.harvard.edu/rafa-gomez-bombarelli/" onclick="trackOutboundLink(this, 'outbound', 'Rafa');">Rafa Gómez-Bombarelli</a>,
+  <a href="./index.html" onclick="trackOutboundLink(this, 'outbound', 'David Duvenaud');">David Duvenaud</a>,
+  <a href="https://jmhl.org/" onclick="trackOutboundLink(this, 'outbound', 'Miguel');">José Miguel Hernández-Lobato</a>,
+  <a href="http://aspuru.chem.harvard.edu/jorge-aguilera/" onclick="trackOutboundLink(this, 'outbound', 'Jorge');">Jorge Aguilera-Iparraguirre</a>,
+  <a href="https://www.linkedin.com/in/t1m0thy" onclick="trackOutboundLink(this, 'outbound', 'Tim');">Timothy Hirzel</a>,
+  <a href="http://people.seas.harvard.edu/~rpa/" onclick="trackOutboundLink(this, 'outbound', 'Ryan Adams');">Ryan P. Adams</a>,
+  <a href="http://aspuru.chem.harvard.edu/about-alan/" onclick="trackOutboundLink(this, 'outbound', 'Dougal');">Alán Aspuru-Guzik</a>
+<br>
+<em>Arxiv</em>, 2016<br>
+  <a href="https://arxiv.org/pdf/1605.07025v2.pdf" onclick="_gaq.push(['_trackEvent', 'downloads', 'autochem', 'pdf' ]);">preprint</a>
+<!--| <a href="papers/molauto.bib"                onclick="_gaq.push(['_trackEvent', 'downloads', 'autochem', 'bibtex' ]);">bibtex</a> -->
+<br>
+</td></tr>
+<tr><td height="10px"></td></tr>
+</table>
+	
+</div>
+</div>
+</div>
+
+</body></html>
