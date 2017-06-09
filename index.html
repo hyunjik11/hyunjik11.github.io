@@ -70,7 +70,8 @@ in particular on regression models for collaborative filtering that are motivate
 I have recently developed an interest in deep generative models, in particular latent variable models whose latent variables are interpretable, for example representing disentangled factors of variation in the data.
 I am also interested in gradient based inference for generative models with discrete units. </p>
 <p> Previously, I studied Mathematics at the <a href="https://www.cam.ac.uk/">University of Cambridge</a>, from which I obtained B.A. and M.Math. degrees. 
-I spent a summer at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/">Microsoft Research, Cambridge</a> as a research intern, and worked on collaborative filtering.
+I spent a summer at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/">Microsoft Research, Cambridge</a> as a research intern, and worked on collaborative filtering. 
+I will start my research internship at <a href="https://deepmind.com/">Deepmind</a> in the Summer of 2017, working on Deep Generative Models.
 
 <p><a href="./cv/CV_Hyunjik_Kim.pdf" onclick="_gaq.push(['_trackEvent', 'downloads', 'resume', 'pdf']);">Curriculum Vitae</a></p>
 <p> 
@@ -112,12 +113,18 @@ Further details can be found <a href="http://www.oxfordsparks.ox.ac.uk/content/w
   </a>
 </td>
 <td valign="top">
-  <b>Tucker Gaussian Process for Regression and Collaborative Filtering</b>
+  <b>Collaborative Filtering with Side Information: a Gaussian Process Perspective</b>
 <p>
-<em>Abstract:</em> We introduce the Tucker Gaussian Process (TGP), a model for regression that regularises a Gaussian Process (GP) towards simpler regression functions for enhanced generalisation performance. 
-We derive it using a novel approach to scalable GP learning, and show that our model is particularly well-suited to grid-structured data and problems where the dependence on covariates is close to being separable. 
-A prime example is collaborative filtering, for which our model provides an effective GP based method that has a low-rank matrix factorisation at its core. We show that TGP generalises classical Bayesian matrix factorisation models, and goes beyond them to give a natural and elegant method for incorporating side information.
-
+<em>Abstract:</em> We tackle the problem of collaborative filtering (CF) with side information,
+	through the lens of Gaussian Process (GP) regression. Driven by the idea of using the kernel 
+	to explicitly model user-item similarities, we formulate the GP in a way that allows the 
+	incorporation of low-rank matrix factorisation, arriving at our model, the Tucker Gaussian Process (TGP). 
+	Consequently, TGP generalises classical Bayesian matrix factorisation models, 
+	and goes beyond them to give a natural and elegant method for incorporating side information, 
+	giving enhanced predictive performance for CF problems. 
+	Moreover we show that it is a novel model for regression, 
+	especially well-suited to grid-structured data and problems 
+	where the dependence on covariates is close to being separable.
 </p>
   <a href="./index.html" onclick="trackOutboundLink(this, 'outbound', 'Hyunjik');">Hyunjik Kim</a>,
   Xiaoyu Lu,
@@ -125,7 +132,7 @@ A prime example is collaborative filtering, for which our model provides an effe
   <a href="http://www.stats.ox.ac.uk/~teh/" onclick="trackOutboundLink(this, 'outbound', 'Yee Whye');">Yee Whye Teh</a>
 <br>
 <em>ArXiv</em>, 2016<br>
-  <a href="https://arxiv.org/pdf/1605.07025v2.pdf" onclick="_gaq.push(['_trackEvent', 'downloads', 'tuckergp', 'pdf' ]);">pdf</a>
+  <a href="https://arxiv.org/pdf/1605.07025" onclick="_gaq.push(['_trackEvent', 'downloads', 'tuckergp', 'pdf' ]);">pdf</a>
   | <a href="./papers/bibtex/tuckergp.bib" onclick="_gaq.push(['_trackEvent', 'downloads', 'tuckergp', 'bibtex' ]);">bibtex</a>
 <br>
 </td></tr>
@@ -146,18 +153,24 @@ A prime example is collaborative filtering, for which our model provides an effe
 <td valign="top">
   <b>Scaling up the Automatic Statistician: Scalable Structure Discovery for Regression using Gaussian Processes</b>
 <p>
-<em>Abstract:</em> Automatic Bayesian Covariance Discovery(ABCD) in Lloyd et. al (2014) provides a framework for automating statistical
-	modelling as well as exploratory data analysis for regression problems. However ABCD does not scale due to its O(N^3) running time.
-	This is undesirable not only because the average size of data sets is growing fast, but also because there is potentially more 
-	information in bigger data, implying a greater need for more expressive models that can discover sophisticated structure. 
-	We propose a scalable version of ABCD, to encompass big data within the boundaries of automated statistical modelling.</p>
+<em>Abstract:</em> Automating statistical modelling is a challenging problem that has far-reaching implications for artificial intelligence. 
+	The Automatic Statistician employs a kernel search algorithm to provide a first step in this direction for regression problems. 
+	However this does not scale due to its O(N^3) running time for the model selection. 
+	This is undesirable not only because the average size of data sets is growing fast, 
+	but also because there is potentially more information in bigger data, 
+	implying a greater need for more expressive models that can discover finer structure. 
+	We propose Scalable Kernel Composition (SKC), a scalable kernel search algorithm, 
+	to encompass big data within the boundaries of automated statistical modelling.</p>
   <a href="./index.html" onclick="trackOutboundLink(this, 'outbound', 'Hyunjik');">Hyunjik Kim</a>,
   <a href="http://www.stats.ox.ac.uk/~teh/" onclick="trackOutboundLink(this, 'outbound', 'Yee Whye');">Yee Whye Teh</a>
 <br>
+<em>ArXiv</em>, 2017<br>
+  <a href="https://arxiv.org/pdf/1706.02524" onclick="_gaq.push(['_trackEvent', 'downloads', 'tuckergp', 'pdf' ]);">pdf</a>
+  | <a href="./papers/bibtex/ssdgp.bib" onclick="_gaq.push(['_trackEvent', 'downloads', 'tuckergp', 'bibtex' ]);">bibtex</a>
+<br>	
 <em>AutoML 2016, Journal of Machine Learning Research Workshop and Conference Proceedings.</em> <br>
 	<em>Practical Bayesian Nonparametrics Workshop, NIPS 2016.</em> <b>Oral &amp; Travel Award. </b> <br>
   <a href="http://www.jmlr.org/proceedings/papers/v64/kim_scalable_2016.pdf" onclick="_gaq.push(['_trackEvent', 'downloads', 'ssdgp', 'pdf' ]);">pdf</a>
-  | <a href="./papers/bibtex/ssdgp.bib"             onclick="_gaq.push(['_trackEvent', 'downloads', 'ssdgp', 'bibtex' ]);">bibtex</a>
 <br>
 </td></tr>
 <tr><td height="10px"></td></tr>
