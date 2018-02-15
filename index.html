@@ -139,18 +139,16 @@ Further details can be found <a href="http://www.oxfordsparks.ox.ac.uk/content/w
 <td valign="top">
   <b>Scaling up the Automatic Statistician: Scalable Structure Discovery for Regression using Gaussian Processes</b>
 <p>
-<em>Abstract:</em> Automating statistical modelling is a challenging problem that has far-reaching implications for artificial intelligence. 
-	The Automatic Statistician employs a kernel search algorithm to provide a first step in this direction for regression problems. 
+<em>Abstract:</em> Automating statistical modelling is a challenging problem in artificial intelligence. 
+	The Automatic Statistician takes a first step in this direction, by employing a kernel search algorithm with Gaussian Processes (GP) to provide interpretable statistical models for regression problems. 
 	However this does not scale due to its O(N^3) running time for the model selection. 
-	This is undesirable not only because the average size of data sets is growing fast, 
-	but also because there is potentially more information in bigger data, 
-	implying a greater need for more expressive models that can discover finer structure. 
-	We propose Scalable Kernel Composition (SKC), a scalable kernel search algorithm, 
-	to encompass big data within the boundaries of automated statistical modelling.</p>
+	We propose Scalable Kernel Composition (SKC), a scalable kernel search algorithm that extends the Automatic Statistician to bigger data sets. 
+	In doing so, we derive a cheap upper bound on the GP marginal likelihood that sandwiches the marginal likelihood with the variational lower bound. 
+	We show that the upper bound is significantly tighter than the lower bound and thus useful for model selection.</p>
   <a href="./index.html" onclick="trackOutboundLink(this, 'outbound', 'Hyunjik');">Hyunjik Kim</a>,
   <a href="http://www.stats.ox.ac.uk/~teh/" onclick="trackOutboundLink(this, 'outbound', 'Yee Whye');">Yee Whye Teh</a>
 <br>
-<em>ArXiv</em>, 2017 <em>[Conference version in submission]</em><br>
+<em>AISTATS</em>, 2018 <b>(Oral)</b><br>
   <a href="https://arxiv.org/pdf/1706.02524" onclick="_gaq.push(['_trackEvent', 'downloads', 'tuckergp', 'pdf' ]);">pdf</a>
   | <a href="./papers/bibtex/ssdgp.bib" onclick="_gaq.push(['_trackEvent', 'downloads', 'tuckergp', 'bibtex' ]);">bibtex</a>
 <br>	
