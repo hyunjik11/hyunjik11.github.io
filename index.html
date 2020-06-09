@@ -64,23 +64,25 @@ margin-top:0.0em;
 <!-- <img alt="" src="./pictures/text.png"> -->
 <br><br>
 
-<p>I'm a research scientist at  <a href="https://deepmind.com/">DeepMind</a> at the Google London office, working on probabilistic modelling, disentangling, and models for deep learning that use attention. 
+<p>I'm a research scientist at  <a href="https://deepmind.com/">DeepMind</a> at the Google London office, working on probabilistic modelling, models for deep learning that use attention, and group equivariant neural networks.
 Prior to that I did my PhD in machine learning at the <a href="http://www.ox.ac.uk/">University of Oxford</a>, supervised by <a href="http://www.stats.ox.ac.uk/~teh/">Prof. Yee Whye Teh</a> in the <a href="http://csml.stats.ox.ac.uk/">Machine Learning group</a> at the <a href="http://stats.ox.ac.uk/"> Department of Statistics</a>. 
 </p>
-<p>My research interests lie at the intersection of Bayesian Machine Learning and Deep Learning, especially interpretable models that arise in this intersection.
-In particular, I'm interested in self-attention, unsupervised/semi-supervised representation learning (e.g. disentangling) and learning stochastic processes via Deep Learning methods. Other (related) areas of interest include generative models of image/video and meta-learning.
-Previously, I have worked on scaling up inference for Gaussian processes, in particular on regression models for collaborative filtering that are motivated by a scalable approximation to a GP, 
+<p>Broadly speaking, my research interests lie in the field of probabilistic modelling and deep learning, mostly at the intersection of the two.
+My narrower research interests keep on evolving, and currently I'm interested in group equivariant neural networks and self-attention.
+In particular, I've recently done theoretical work on studying the Lipschitz constant of self-attention. 
+Prior to that, I worked on unsupervised representation learning (disentangling) and learning stochastic processes via Deep Learning methods (neural processes).
+I have also worked on scaling up inference for Gaussian processes, in particular on regression models for collaborative filtering that are motivated by a scalable approximation to a GP, 
 as well as a method for scaling up the compositional kernel search used by the <a href="https://www.automaticstatistician.com/index/">Automatic Statistician</a> via variational sparse GP methods.
  </p>
 <p> Before my PhD, I studied Mathematics at the <a href="https://www.cam.ac.uk/">University of Cambridge</a>, from which I obtained B.A. and M.Math. degrees. 
 I spent a summer at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/">Microsoft Research, Cambridge</a> as a research intern, and worked on collaborative filtering. 
-I spent last summer interning at <a href="https://deepmind.com/">DeepMind</a> working on unsupervised learning of disentangled representations.
+I also spent a summer interning at <a href="https://deepmind.com/">DeepMind</a> working on unsupervised learning of disentangled representations.
 
 <p><a href="./cv/CV_Hyunjik_Kim.pdf" onclick="_gaq.push(['_trackEvent', 'downloads', 'resume', 'pdf']);">Curriculum Vitae</a> (last updated: June 2019)</p>
 <p><a href="https://scholar.google.co.uk/citations?user=vxU3Zk4AAAAJ&hl=en&oi=ao">Google scholar page</a></p>
 	
 <p> 
-E-mail: <a href="mailto:hkim@stats.ox.ac.uk">hkim@stats.ox.ac.uk</a>
+E-mail: <a href="mailto:hyunjikk@google.com">hyunjikk@google.com</a>
 </p>
 
 <div class="foo">
@@ -89,25 +91,64 @@ E-mail: <a href="mailto:hkim@stats.ox.ac.uk">hkim@stats.ox.ac.uk</a>
 	
 <H2><a id="recent">Recent</a></H2>
 <table border="0" cellspacing="10" cellpadding="2"><tbody>
+	
+<tr>
+<td valign="top">
+  <b>The Lipschitz Constant of Self-Attention</b>
+<p>
+<em>Abstract:</em> Lipschitz constants of neural networks have been explored in various contexts in deep learning, 
+	such as provable adversarial robustness, estimating Wasserstein distance, stabilising training of GANs, 
+	and formulating invertible neural networks. Such works have focused on bounding the Lipschitz constant of 
+	fully connected or convolutional networks, composed of linear maps and pointwise non-linearities. 
+	In this paper, we investigate the Lipschitz constant of self-attention, a non-linear neural network module 
+	widely used in sequence modelling. We prove that the standard dot-product self-attention is not Lipschitz, 
+	and propose an alternative L2 self-attention that is Lipschitz. We derive an upper bound on the 
+	Lipschitz constant of L2 self-attention and provide empirical evidence for its asymptotic tightness. 
+	To demonstrate the practical relevance of the theory, we formulate invertible self-attention and 
+	use it in a Transformer-based architecture for a character-level language modelling task.
+</p>
+  <a href="./index.html" onclick="trackOutboundLink(this, 'outbound', 'Hyunjik');">Hyunjik Kim</a>,
+  <a href="https://gpapamak.github.io/" onclick="trackOutboundLink(this, 'outbound', 'George');">George Papamakarios</a>,
+  <a href="https://www.cs.toronto.edu/~amnih/" onclick="trackOutboundLink(this, 'outbound', 'Andriy');">Andriy Mnih</a>
+<br>
+<em>ArXiv</em>, 2020.<br>
+  <a href="https://arxiv.org/pdf/2006.04710" onclick="_gaq.push(['_trackEvent', 'downloads', 'lipschitz', 'pdf' ]);">pdf</a>
+  | <a href="./papers/bibtex/lipschitz.bib" onclick="_gaq.push(['_trackEvent', 'downloads', 'lipschitz', 'bibtex' ]);">bibtex</a>
+<br>
+</td></tr>
 
 <tr>
 <td valign="top">
-  <b>Talk - Attention: the Analogue of Kernels in Deep Learning </b>
+  <b>MetaFun: Meta-Learning with Iterative Functional Updates</b>
 <p>
-<em>Abstract:</em> There have been many recent works that lie at the intersection of kernel methods and deep learning, 
-	namely Deep Kernel Learning, Deep Gaussian Processes (GPs) and Convolutional GPs. However such works are often 
-	motivated by borrowing ideas that originate from deep learning and incorporating them into kernel methods. 
-	In this talk, we will explore the concept of attention or self-attention, that has interestingly travelled the
-	opposite path; it is inherently motivated from kernels, but is being used extensively in state-of-the-art deep
-	learning models in various data modalities. We investigate attention in more detail by studying the 
-	Attentive Neural Process (ANP) that incorporates attention into the recently introduced Neural Process (NP), 
-	a deep models that learns a stochastic process. We show that ANPs address some fundamental drawbacks of NPs 
-	by bringing them closer to GPs, while maintaining the benefits of neural networks such as scalability and flexibility.
+<em>Abstract:</em> We develop a functional encoder-decoder approach to supervised meta-learning, 
+	where labeled data is encoded into an infinite-dimensional functional representation rather 
+	than a finite-dimensional one. Furthermore, rather than directly producing the representation, 
+	we learn a neural update rule resembling functional gradient descent which iteratively improves the representation. 
+	The final representation is used to condition the decoder to make predictions on unlabeled data. 
+	Our approach is the first to demonstrates the success of encoder-decoder style meta-learning methods 
+	like conditional neural processes on large-scale few-shot classification benchmarks such as miniImageNet
+	and tieredImageNet, where it achieves state-of-the-art performance.
 </p>
-<em>Venue:</em> <a href="https://sites.google.com/corp/view/kernel-workshop/">Recent Developments in Kernel Methods workshop @Gatsby Computational Neuroscience Unit, UCL</a>, 27/09/19.
-<br> <a href="./talks/Attention_the_Analogue_of_Kernels_in_Deep_Learning.pdf">slides</a>
+  <a href="https://jinxu06.github.io/" onclick="trackOutboundLink(this, 'outbound', 'Jin');">Jin Xu</a>,
+  <a href="https://savior287.github.io/JFT-webpage/" onclick="trackOutboundLink(this, 'outbound', 'Jeff');">Jean-Francois Ton</a>,
+  <a href="./index.html" onclick="trackOutboundLink(this, 'outbound', 'Hyunjik');">Hyunjik Kim</a>,
+  <a href="http://akosiorek.github.io/" onclick="trackOutboundLink(this, 'outbound', 'Adam');">Adam Kosiorek</a>,
+  <a href="http://www.stats.ox.ac.uk/~teh/" onclick="trackOutboundLink(this, 'outbound', 'Yee Whye');">Yee Whye Teh</a>
+<br>
+<em><b>ICML 2020.</b></em> <br>
+  <a href="https://arxiv.org/pdf/1912.02738.pdf" onclick="_gaq.push(['_trackEvent', 'downloads', 'metafun', 'pdf' ]);">pdf</a>
+  | <a href="./papers/bibtex/metafun.bib" onclick="_gaq.push(['_trackEvent', 'downloads', 'metafun', 'bibtex' ]);">bibtex</a>
+<br>	
 </td></tr>
+
+</tbody></table>			
+
+<!-- Publications -->
 	
+<H2><a id="publications">Publications</a></H2>
+<table border="0" cellspacing="10" cellpadding="2"><tbody>
+
 <tr>
 <td valign="top">
   <b>Attentive Neural Processes</b>
@@ -146,12 +187,7 @@ that can be modelled.
   | <a href="https://github.com/deepmind/neural-processes" onclick="_gaq.push(['_trackEvent', 'downloads', 'anp', 'github' ]);">github</a> 
 <br>
 </td></tr>
-</tbody></table>			
-
-<!-- Publications -->
 	
-<H2><a id="publications">Publications</a></H2>
-<table border="0" cellspacing="10" cellpadding="2"><tbody>
 <tr>
 <td valign="top">
   <b>Sequential Attend, Infer, Repeat: Generative Modelling of Moving Objects</b>
@@ -231,6 +267,36 @@ that can be modelled.
 
 <tr>
 <td valign="top">
+  <b>Meta-Learning surrogate models for sequential decision making</b>
+<p>
+<em>Abstract:</em> We introduce a unified probabilistic framework for solving sequential decision making problems 
+	ranging from Bayesian optimisation to contextual bandits and reinforcement learning. This is accomplished 
+	by a probabilistic model-based approach that explains observed data while capturing predictive uncertainty 
+	during the decision making process. Crucially, this probabilistic model is chosen to be a Meta-Learning system 
+	that allows learning from a distribution of related problems, allowing data efficient adaptation to a target task. 
+	As a suitable instantiation of this framework, we explore the use of Neural processes due to statistical and 
+	computational desiderata. We apply our framework to a broad range of problem domains, such as control problems, 
+	recommender systems and adversarial attacks on RL agents, demonstrating an efficient and general black-box learning 
+	approach.
+</p>
+  <a href="https://jonathan-schwarz.github.io/" onclick="trackOutboundLink(this, 'outbound', 'Jonathan');">Jonathan Schwarz</a>,
+  <a href="http://galashov.com/" onclick="trackOutboundLink(this, 'outbound', 'Alexandre');">Alexandre Galashov</a>,	
+  <a href="./index.html" onclick="trackOutboundLink(this, 'outbound', 'Hyunjik');">Hyunjik Kim</a>,
+  <a href="https://www.doc.ic.ac.uk/~mg4413/" onclick="trackOutboundLink(this, 'outbound', 'Marta');">Marta Garnelo</a>,
+  <a href="https://scholar.google.com/citations?user=ekterPoAAAAJ" onclick="trackOutboundLink(this, 'outbound', 'David Saxton');">David Saxton</a>,
+  <a href="https://sites.google.com/site/pushmeet/" onclick="trackOutboundLink(this, 'outbound', 'Pushmeet');">Pushmeet Kohli</a>,	
+  <a href="http://arkitus.com/research/" onclick="trackOutboundLink(this, 'outbound', 'Ali Eslami');">Ali Eslami</a>,
+  <a href="http://www.stats.ox.ac.uk/~teh/" onclick="trackOutboundLink(this, 'outbound', 'Yee Whye');">Yee Whye Teh</a>
+
+<br>
+<em>ArXiv</em>, 2019.<br>
+  <a href="https://arxiv.org/pdf/1903.11907" onclick="_gaq.push(['_trackEvent', 'downloads', 'surrogate', 'pdf' ]);">pdf</a>
+  | <a href="./papers/bibtex/surrogate.bib" onclick="_gaq.push(['_trackEvent', 'downloads', 'surrogate', 'bibtex' ]);">bibtex</a>
+<br>
+</td></tr>
+	
+<tr>
+<td valign="top">
   <b>Collaborative Filtering with Side Information: a Gaussian Process Perspective</b>
 <p>
 <em>Abstract:</em> We tackle the problem of collaborative filtering (CF) with side information,
@@ -261,6 +327,25 @@ that can be modelled.
 <!-- Talks -->
 <H2><a id="talks">Talks</a></H2>
 <table border="0" cellspacing="10" cellpadding="2"><tbody>
+
+<tr>
+<td valign="top">
+  <b>Attention: the Analogue of Kernels in Deep Learning </b>
+<p>
+<em>Abstract:</em> There have been many recent works that lie at the intersection of kernel methods and deep learning, 
+	namely Deep Kernel Learning, Deep Gaussian Processes (GPs) and Convolutional GPs. However such works are often 
+	motivated by borrowing ideas that originate from deep learning and incorporating them into kernel methods. 
+	In this talk, we will explore the concept of attention or self-attention, that has interestingly travelled the
+	opposite path; it is inherently motivated from kernels, but is being used extensively in state-of-the-art deep
+	learning models in various data modalities. We investigate attention in more detail by studying the 
+	Attentive Neural Process (ANP) that incorporates attention into the recently introduced Neural Process (NP), 
+	a deep models that learns a stochastic process. We show that ANPs address some fundamental drawbacks of NPs 
+	by bringing them closer to GPs, while maintaining the benefits of neural networks such as scalability and flexibility.
+</p>
+<em>Venue:</em> <a href="https://sites.google.com/corp/view/kernel-workshop/">Recent Developments in Kernel Methods workshop @Gatsby Computational Neuroscience Unit, UCL</a>, 27/09/19.
+<br> <a href="./talks/Attention_the_Analogue_of_Kernels_in_Deep_Learning.pdf">slides</a>
+</td></tr>
+
 <tr>
 <td valign="top">
   <b>Interpretable Models in Probabilistic Deep Learning </b>
