@@ -98,7 +98,7 @@
             <tbody>
                  <tr>
                   <td valign="top">
-                    <b>From data to functa: Your data point is a function and you should treat it like one</b>
+                    <b>From data to functa: Your data point is a function and you can treat it like one</b>
                     <p>
                     <em>Abstract:</em> It is common practice in deep learning to represent a measurement of the world on a discrete grid, e.g. a 2D grid of pixels. 
                       However, the underlying signal represented by these measurements is often continuous, e.g. the scene depicted in an image. 
@@ -117,9 +117,67 @@
                       <a href="http://www.cs.huji.ac.il/~danrsm/" onclick="trackOutboundLink(this, 'outbound', 'Dan Rosenbaum');">Dan Rosenbaum</a>
                     <br>
                     <sup>*</sup>Equal contribution.<br>
-                    <em>ArXiv</em>, 2022.<br>
+                    <em><b>ICML 2022.</b></em><br>
                       <a href="https://arxiv.org/pdf/2201.12204" onclick="_gaq.push(['_trackEvent', 'downloads', 'functa', 'pdf' ]);">pdf</a>
                       | <a href="./papers/bibtex/functa.bib" onclick="_gaq.push(['_trackEvent', 'downloads', 'functa', 'bibtex' ]);">bibtex</a>
+                    <br>
+                  </td>
+                </tr>
+                <tr>
+                  <td valign="top">
+                    <b>Learning Instance-Specific Data Augmentations</b>
+                    <p>
+                    <em>Abstract:</em> Existing data augmentation methods typically assume independence between transformations and inputs:
+                      they use the same transformation distribution for all input instances. 
+                      We explain why this can be problematic and propose InstaAug, a method for automatically learning input-specific augmentations from data.
+                      This is achieved by introducing an augmentation module that maps an input to a distribution over transformations.
+                      This is simultaneously trained alongside the base model in a fully end-to-end manner using only the training data.
+                      We empirically demonstrate that InstaAug learns meaningful augmentations for a wide range of transformation classes,
+                      which in turn provides better performance on supervised and self-supervised tasks compared with augmentations that assume input--transformation independence.
+                    </p>
+                      <a href="http://www.ningmiao.space/" onclick="trackOutboundLink(this, 'outbound', 'Ning');">Ning Miao</a>,
+                      <a href="https://emilemathieu.fr/" onclick="trackOutboundLink(this, 'outbound', 'Emile');">Emile Mathieu</a>,
+                      <a href="https://yanndubs.github.io/" onclick="trackOutboundLink(this, 'outbound', 'Yann');">Yann Dubois</a>,
+                      <a href="https://www.robots.ox.ac.uk/~twgr/" onclick="trackOutboundLink(this, 'outbound', 'Tom');">Tom Rainforth</a>
+                      <a href="http://www.stats.ox.ac.uk/~teh/" onclick="trackOutboundLink(this, 'outbound', 'Yee Whye');">Yee Whye Teh</a>
+                      <a href="https://ae-foster.github.io/" onclick="trackOutboundLink(this, 'outbound', 'Adam Foster');">Adam Foster</a>
+                      <a href="./index.html" onclick="trackOutboundLink(this, 'outbound', 'Hyunjik');">Hyunjik Kim</a>,
+                    <br>
+                    <em>Arxiv</em>, 2022.<br>
+                      <a href="https://arxiv.org/pdf/2206.00051" onclick="_gaq.push(['_trackEvent', 'downloads', 'instaaug', 'pdf' ]);">pdf</a>
+                      | <a href="./papers/bibtex/instaaug.bib" onclick="_gaq.push(['_trackEvent', 'downloads', 'instaaug', 'bibtex' ]);">bibtex</a>
+                    <br>
+                  </td>
+                </tr>
+                <tr>
+                  <td valign="top">
+                    <b>Pre-training via Denoising for Molecular Property Prediction</b>
+                    <p>
+                    <em>Abstract:</em> Many important problems involving molecular property prediction from 3D structures have limited data, 
+                      posing a generalization challenge for neural networks. In this paper, we describe a pre-training technique that utilizes
+                      large datasets of 3D molecular structures at equilibrium to learn meaningful representations for downstream tasks. 
+                      Inspired by recent advances in noise regularization, our pre-training objective is based on denoising. 
+                      Relying on the well-known link between denoising autoencoders and score-matching, we also show that the objective corresponds 
+                      to learning a molecular force field -- arising from approximating the physical state distribution with a mixture of Gaussians 
+                      -- directly from equilibrium structures. Our experiments demonstrate that using this pre-training objective significantly 
+                      improves performance on multiple benchmarks, achieving a new state-of-the-art on the majority of targets in the widely used 
+                      QM9 dataset. Our analysis then provides practical insights into the effects of different factors -- dataset sizes, 
+                      model size and architecture, and the choice of upstream and downstream datasets -- on pre-training.
+                    </p>
+                      <a href="https://shehzaidi.github.io/" onclick="trackOutboundLink(this, 'outbound', 'Sheh');">Sheheryar Zaidi<sup>*</sup></a>,
+                      <a href="http://www.michaelschaarschmidt.com/" onclick="trackOutboundLink(this, 'outbound', 'Michael S');">Michael Schaarschmidt<sup>*</sup></a>,
+                      <a href="https://www.cs.toronto.edu/~jmartens/research.html" onclick="trackOutboundLink(this, 'outbound', 'James');">James Martens</a>,
+                      <a href="./index.html" onclick="trackOutboundLink(this, 'outbound', 'Hyunjik');">Hyunjik Kim</a>,
+                      <a href="http://www.stats.ox.ac.uk/~teh/" onclick="trackOutboundLink(this, 'outbound', 'Yee Whye');">Yee Whye Teh</a>
+                      <a href="https://scholar.google.co.uk/citations?user=d1oQ8NcAAAAJ&hl=en" onclick="trackOutboundLink(this, 'outbound', 'Alvaro');">Alvaro Sanchez Gonzalez</a>
+                      <a href="https://scholar.google.com/citations?user=nQ7Ij30AAAAJ&hl=en" onclick="trackOutboundLink(this, 'outbound', 'Peter');">Peter Battaglia</a>
+                      <a href="https://sites.google.com/corp/view/razp" onclick="trackOutboundLink(this, 'outbound', 'Razvan');">Razvan Pascanu</a>
+                      <a href="https://scholar.google.co.uk/citations?user=TEYiFIsAAAAJ&hl=en&oi=sra" onclick="trackOutboundLink(this, 'outbound', 'Jonathan G');">Jonathan Godwin</a>
+                    <br>
+                    <sup>*</sup>Equal contribution.<br>                  
+                    <em>Arxiv</em>, 2022.<br>
+                      <a href="https://arxiv.org/pdf/2206.00133" onclick="_gaq.push(['_trackEvent', 'downloads', 'pretraining', 'pdf' ]);">pdf</a>
+                      | <a href="./papers/bibtex/pretraining.bib" onclick="_gaq.push(['_trackEvent', 'downloads', 'pretraining', 'bibtex' ]);">bibtex</a>
                     <br>
                   </td>
                 </tr>
