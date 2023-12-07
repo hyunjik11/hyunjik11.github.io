@@ -95,7 +95,69 @@
           <H2><a id="recent">Recent</a></H2>
           <table border="0" cellspacing="10" cellpadding="2">
             <tbody>
-               <tr>
+              <tr>
+                <td valign="top">
+                  <b>C3: High-performance and low-complexity neural compression from a single image or video</b>
+                  <p>
+                  <em>Abstract:</em> Most neural compression models are trained on large datasets of images or videos in order to generalize to unseen data. Such generalization typically requires large and expressive architectures with a high decoding complexity. Here we introduce C3, a neural compression method with strong rate-distortion (RD) performance that instead overfits a small model to each image or video separately. The resulting decoding complexity of C3 can be an order of magnitude lower than neural baselines with similar RD performance. C3 builds on COOL-CHIC (Ladune et al.) and makes several simple and effective improvements for images. We further develop new methodology to apply C3 to videos. On the CLIC2020 image benchmark, we match the RD performance of VTM, the reference implementation of the H.266 codec, with less than 3k MACs/pixel for decoding. On the UVG video benchmark, we match the RD performance of the Video Compression Transformer (Mentzer et al.), a well-established neural video codec, with less than 5k MACs/pixel for decoding.
+                  </p>
+                    <a href="./index.html" onclick="trackOutboundLink(this, 'outbound', 'Hyunjik');">Hyunjik Kim<sup>*</sup></a>,
+                    <a href="https://scholar.google.co.uk/citations?user=lWDq-ygAAAAJ&hl=en" onclick="trackOutboundLink(this, 'outbound', 'Matthias');">Matthias Bauer<sup>*</sup></a>,
+                    <a href="http://theis.io/" onclick="trackOutboundLink(this, 'outbound', 'Lucas');">Lucas Theis</a>,
+                    <a href="https://jonathan-schwarz.github.io/" onclick="trackOutboundLink(this, 'outbound', 'Jonathan');">Jonathan Schwarz</a>,
+                    <a href="https://emiliendupont.github.io/" onclick="trackOutboundLink(this, 'outbound', 'Emilien');">Emilien Dupont<sup>*</sup></a>
+                  <br>
+                  <sup>*</sup>Equal contribution.<br>
+                  <em><b>ArXiv, 2023</b></em><br>
+                    <a href="https://arxiv.org/pdf/2312.02753" onclick="_gaq.push(['_trackEvent', 'downloads', 'c3', 'pdf' ]);">pdf</a>
+                  <br>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <b>Finding Increasingly Large Extremal Graphs with AlphaZero and Tabu Search</b>
+                  <p>
+                  <em>Abstract:</em> This work studies a central extremal graph theory problem inspired by a 1975 conjecture of Erdős, which aims to find graphs with a given size (number of nodes) that maximize the number of edges without having 3- or 4-cycles. We formulate this problem as a sequential decision-making problem and compare AlphaZero, a neural network-guided tree search, with tabu search, a heuristic local search method. Using either method, by introducing a curriculum -- jump-starting the search for larger graphs using good graphs found at smaller sizes -- we improve the state-of-the-art lower bounds for several sizes. We also propose a flexible graph-generation environment and a permutation-invariant network architecture for learning to search in the space of graphs.
+                  </p>
+                    <a href="https://abbasmehrabian.com/" onclick="trackOutboundLink(this, 'outbound', 'Abbas');">Abbas Mehrabian<sup>*</sup></a>,
+                    <a href="https://sites.google.com/corp/view/ankitsanand/home" onclick="trackOutboundLink(this, 'outbound', 'Ankit');">Ankit Anand<sup>*</sup></a>,
+                    <a href="./index.html" onclick="trackOutboundLink(this, 'outbound', 'Hyunjik');">Hyunjik Kim<sup>*</sup></a>
+                     et al.,
+                  <br>
+                  <sup>*</sup>Equal contribution.<br>
+                  <em><b>Neurips 2023 Workshop: MATH-AI.</b></em><br>
+                    <a href="https://arxiv.org/pdf/2311.03583" onclick="_gaq.push(['_trackEvent', 'downloads', 'extremal', 'pdf' ]);">pdf</a>
+                  <br>
+                </td>
+              </tr>
+            </tbody>
+          </table>			
+
+          <!-- Publications -->
+            
+          <H2><a id="publications">Publications</a></H2>
+          <table border="0" cellspacing="10" cellpadding="2">
+            <tbody>
+              <tr>
+                <td valign="top">
+                  <b>Learning Instance-Specific Augmentations by Capturing Local Invariances</b>
+                  <p>
+                  <em>Abstract:</em> We introduce InstaAug, a method for automatically learning input-specific augmentations from data. Previous methods for learning augmentations have typically assumed independence between the original input and the transformation applied to that input. This can be highly restrictive, as the invariances we hope our augmentation will capture are themselves often highly input dependent. InstaAug instead introduces a learnable invariance module that maps from inputs to tailored transformation parameters, allowing local invariances to be captured. This can be simultaneously trained alongside the downstream model in a fully end-to-end manner, or separately learned for a pre-trained model. We empirically demonstrate that InstaAug learns meaningful input-dependent augmentations for a wide range of transformation classes, which in turn provides better performance on both supervised and self-supervised tasks.
+                  </p>
+                      <a href="http://www.ningmiao.space/" onclick="trackOutboundLink(this, 'outbound', 'Ning');">Ning Miao</a>,
+                      <a href="https://emilemathieu.fr/" onclick="trackOutboundLink(this, 'outbound', 'Emile');">Emile Mathieu</a>,
+                      <a href="https://yanndubs.github.io/" onclick="trackOutboundLink(this, 'outbound', 'Yann');">Yann Dubois</a>,
+                      <a href="https://www.robots.ox.ac.uk/~twgr/" onclick="trackOutboundLink(this, 'outbound', 'Tom');">Tom Rainforth</a>,
+                      <a href="http://www.stats.ox.ac.uk/~teh/" onclick="trackOutboundLink(this, 'outbound', 'Yee Whye');">Yee Whye Teh</a>,
+                      <a href="https://ae-foster.github.io/" onclick="trackOutboundLink(this, 'outbound', 'Adam Foster');">Adam Foster</a>,
+                      <a href="./index.html" onclick="trackOutboundLink(this, 'outbound', 'Hyunjik');">Hyunjik Kim</a>
+                  <br>
+                  <em><b>ICML, 2023</b></em><br>
+                    <a href="https://arxiv.org/pdf/2206.00051" onclick="_gaq.push(['_trackEvent', 'downloads', 'insta-aug', 'pdf' ]);">pdf</a>
+                  <br>
+                </td>
+              </tr>
+              <tr>
                 <td valign="top">
                   <b>Spatial Functa: Scaling Functa to ImageNet Classification and Generation</b>
                   <p>
@@ -115,7 +177,7 @@
                     <a href="./index.html" onclick="trackOutboundLink(this, 'outbound', 'Hyunjik');">Hyunjik Kim<sup>*</sup></a>,
                   <br>
                   <sup>*</sup>Equal contribution.<br>
-                  <em><b>Arxiv, 2023.</b></em><br>
+                  <em><b>ICLR 2023 Workshop: Neural Fields across Fields.</b></em><br>
                     <a href="https://arxiv.org/pdf/2302.03130" onclick="_gaq.push(['_trackEvent', 'downloads', 'functa', 'pdf' ]);">pdf</a>
                     | <a href="./papers/bibtex/spatial_functa.bib" onclick="_gaq.push(['_trackEvent', 'downloads', 'functa', 'bibtex' ]);">bibtex</a>
                   <br>
@@ -153,14 +215,6 @@
                   <br>
                 </td>
               </tr>
-            </tbody>
-          </table>			
-
-          <!-- Publications -->
-            
-          <H2><a id="publications">Publications</a></H2>
-          <table border="0" cellspacing="10" cellpadding="2">
-            <tbody>
                <tr>
                 <td valign="top">
                   <b>From data to functa: Your data point is a function and you can treat it like one</b>
@@ -419,32 +473,6 @@
           <H2><a id="preprints">Preprints</a></H2>
             <table border="0" cellspacing="10" cellpadding="2">
               <tbody>
-                <tr>
-                  <td valign="top">
-                    <b>Learning Instance-Specific Data Augmentations</b>
-                    <p>
-                    <em>Abstract:</em> Existing data augmentation methods typically assume independence between transformations and inputs:
-                      they use the same transformation distribution for all input instances. 
-                      We explain why this can be problematic and propose InstaAug, a method for automatically learning input-specific augmentations from data.
-                      This is achieved by introducing an augmentation module that maps an input to a distribution over transformations.
-                      This is simultaneously trained alongside the base model in a fully end-to-end manner using only the training data.
-                      We empirically demonstrate that InstaAug learns meaningful augmentations for a wide range of transformation classes,
-                      which in turn provides better performance on supervised and self-supervised tasks compared with augmentations that assume input--transformation independence.
-                    </p>
-                      <a href="http://www.ningmiao.space/" onclick="trackOutboundLink(this, 'outbound', 'Ning');">Ning Miao</a>,
-                      <a href="https://emilemathieu.fr/" onclick="trackOutboundLink(this, 'outbound', 'Emile');">Emile Mathieu</a>,
-                      <a href="https://yanndubs.github.io/" onclick="trackOutboundLink(this, 'outbound', 'Yann');">Yann Dubois</a>,
-                      <a href="https://www.robots.ox.ac.uk/~twgr/" onclick="trackOutboundLink(this, 'outbound', 'Tom');">Tom Rainforth</a>,
-                      <a href="http://www.stats.ox.ac.uk/~teh/" onclick="trackOutboundLink(this, 'outbound', 'Yee Whye');">Yee Whye Teh</a>,
-                      <a href="https://ae-foster.github.io/" onclick="trackOutboundLink(this, 'outbound', 'Adam Foster');">Adam Foster</a>,
-                      <a href="./index.html" onclick="trackOutboundLink(this, 'outbound', 'Hyunjik');">Hyunjik Kim</a>
-                    <br>
-                    <em>Arxiv</em>, 2022.<br>
-                      <a href="https://arxiv.org/pdf/2206.00051" onclick="_gaq.push(['_trackEvent', 'downloads', 'instaaug', 'pdf' ]);">pdf</a>
-                      | <a href="./papers/bibtex/instaaug.bib" onclick="_gaq.push(['_trackEvent', 'downloads', 'instaaug', 'bibtex' ]);">bibtex</a>
-                    <br>
-                  </td>
-                </tr>
                 <tr>
                   <td valign="top">
                     <b>Meta-Learning surrogate models for sequential decision making</b>
