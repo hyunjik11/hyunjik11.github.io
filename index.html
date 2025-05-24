@@ -111,6 +111,31 @@
               </tr>
               <tr>
                 <td valign="top">
+                  <b>Good, Cheap, and Fast: Overfitted Image Compression with Wasserstein Distortion</b>
+                  <p>
+                  <em>Abstract:</em> Inspired by the success of generative image models, recent work on learned image compression increasingly focuses on better probabilistic models of the natural image distribution, leading to excellent image quality. This, however, comes at the expense of a computational complexity that is several orders of magnitude higher than today's commercial codecs, and thus prohibitive for most practical applications. With this paper, we demonstrate that by focusing on modeling visual perception rather than the data distribution, we can achieve a very good trade-off between visual quality and bit rate similar to "generative" compression models such as HiFiC, while requiring less than 1% of the multiply-accumulate operations (MACs) for decompression. We do this by optimizing C3, an overfitted image codec, for Wasserstein Distortion (WD), and evaluating the image reconstructions with a human rater study, showing that WD clearly outperforms LPIPS as an optimization objective. The study also reveals that WD outperforms other perceptual metrics such as LPIPS, DISTS, and MS-SSIM as a predictor of human ratings, remarkably achieving over 94% Pearson correlation with Elo scores.
+                  </p>
+                    <a href="https://balle.io/" onclick="trackOutboundLink(this, 'outbound', 'Jona');">Jona Ballé</a>,
+                    <a href="https://www.lucaversari.it/" onclick="trackOutboundLink(this, 'outbound', 'Luca');">Luca Versari</a>,
+                    <a href="https://emiliendupont.github.io/" onclick="trackOutboundLink(this, 'outbound', 'Emilien');">Emilien Dupont</a>
+                    <a href="./index.html" onclick="trackOutboundLink(this, 'outbound', 'Hyunjik');">Hyunjik Kim</a>,
+                    <a href="https://scholar.google.co.uk/citations?user=lWDq-ygAAAAJ&hl=en" onclick="trackOutboundLink(this, 'outbound', 'Matthias');">Matthias Bauer</a>,
+                  <br>
+                  <em><b>CVPR, 2025</b></em><br>
+                    <a href="https://arxiv.org/pdf/2412.00505" onclick="_gaq.push(['_trackEvent', 'downloads', 'c3wd', 'pdf' ]);">pdf</a>
+                  <br>
+                </td>
+              </tr>
+            </tbody>
+          </table>			
+
+          <!-- Publications -->
+            
+          <H2><a id="publications">Publications</a></H2>
+          <table border="0" cellspacing="10" cellpadding="2">
+            <tbody>
+              <tr>
+                <td valign="top">
                   <b>C3: High-performance and low-complexity neural compression from a single image or video</b>
                   <p>
                   <em>Abstract:</em> Most neural compression models are trained on large datasets of images or videos in order to generalize to unseen data. Such generalization typically requires large and expressive architectures with a high decoding complexity. Here we introduce C3, a neural compression method with strong rate-distortion (RD) performance that instead overfits a small model to each image or video separately. The resulting decoding complexity of C3 can be an order of magnitude lower than neural baselines with similar RD performance. C3 builds on COOL-CHIC (Ladune et al.) and makes several simple and effective improvements for images. We further develop new methodology to apply C3 to videos. On the CLIC2020 image benchmark, we match the RD performance of VTM, the reference implementation of the H.266 codec, with less than 3k MACs/pixel for decoding. On the UVG video benchmark, we match the RD performance of the Video Compression Transformer (Mentzer et al.), a well-established neural video codec, with less than 5k MACs/pixel for decoding.
@@ -129,14 +154,6 @@
                   <br>
                 </td>
               </tr>
-            </tbody>
-          </table>			
-
-          <!-- Publications -->
-            
-          <H2><a id="publications">Publications</a></H2>
-          <table border="0" cellspacing="10" cellpadding="2">
-            <tbody>
               <tr>
                 <td valign="top">
                   <b>Finding Increasingly Large Extremal Graphs with AlphaZero and Tabu Search</b>
